@@ -1,0 +1,20 @@
+.f{
+    margin-top: 4cm;
+    margin-right: 1cm;
+    margin-left: 1cm;
+    background-color: lavender;
+}
+.hello {
+    font-size: 14;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(148, 24, 197);
+}
+.img-thumbnail {
+    
+    margin-top: 1cm;
+    height: 100%;
+}
+
+.welcome{
+    margin-top: 5cm;
+}

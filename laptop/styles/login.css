@@ -1,0 +1,28 @@
+.hello {
+    font-size: 14;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(45, 73, 186);
+}
+.user {
+    font-size: 150%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.welcome{
+    margin-top: 4cm;
+}
+.f{
+    margin-top: 4cm;
+    margin-right: 1cm;
+    margin-left: 1cm;
+    background-color: lavender;
+}
+
+table {
+    border-collapse: collapse;
+  }
+   th, td {
+    padding: 15px;
+  }
+
+  
+    
