@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> order</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/order.css">
+</head>
+<body style="background-color:whitesmoke;">
+<div class="container">
+  <centre><div class="hello">
+    <div class="col-md-10">
+ <h1 style=" color: blue; "> <center>Register your details</center> </h1>
+  <form id="form">
+      <table>
+      <tr><td><label> Name</label></td>
+        <td><input type="text" class="form-control" name="text" id="fname" placeholder="Enter your name" required></td></tr>
+
+        <tr><td><label for="email">Email</label></td>
+          <td><input type="email" class="form-control" id="email" placeholder="Enter your email" name="email" required></td></tr>
+ 
+    <tr><td><label>Mobile no</label></td>
+      <td><input type="text" class="form-control" required></td></tr>
+
+    <tr><td><label>Gender</label></td>
+      <td>
+    <input type="radio" id="male" name="gender" value="m">
+    <label> Male</label>
+    <input type="radio" id="female" name="gender" value="f">
+    <label>  Female</label><br></td></tr>
+    <label>
+      <tr><td> Address 
+      </td>
+      <td>
+      <textarea name="address" id="help" class="form-control" cols="120" rows="3" required></textarea>
+  </label></td></tr><br>
+  <tr><td> <label>Date of Birth</td>
+    <td><input type="date" class="form-control" name="birthDate" required></label></td></tr>
+
+    <tr><td> <label>Laptop Type</td>
+      <td><br>
+      <select name="Pack Type" class="custom-select" required>
+          <option>None</option>
+          <option>HP</option>
+          <option>DELL</option>
+          <option>Lenovo</option>
+      </select>
+      </label><br><br></td></tr>
+    </table>
+
+    <div class="checkbox">
+      <label><input type="checkbox" name="remember"> Remember me</label>
+    </div>
+  
+    <center><button type="button" class="btn" onclick="openPopup()">Submit</button>
+    <div class="popup" id="popup">
+      <img src="assets/crt.png">
+      <h2>Thank You!</h2>
+      <p>Your details has been successfully submitted. Thanks!</p>
+      <button type="button" onclick="closePopup()">OK</button>
+      <script>
+    
+        let popup=document.getElementById("popup");
+        function openPopup(){
+          popup.classList.add("open-popup");
+        }
+        function closePopup(){
+          popup.classList.remove("open-popup");
+        }
+      </script>
+    </div>
+  </form>
+</div>
+</div></centre>
+</div>
+</body>
+</html>
